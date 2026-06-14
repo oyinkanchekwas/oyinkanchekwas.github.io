@@ -31,12 +31,23 @@ a:active {
 .btn-primary {
   background-color: var(--accent);
   border-color: var(--accent);
+  color: #fff !important;
+}
+
+.btn-primary i {
+  color: #fff !important;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: var(--accent-dark);
   border-color: var(--accent-dark);
+  color: #fff !important;
+}
+
+.btn-primary:hover i,
+.btn-primary:focus i {
+  color: #fff !important;
 }
 
 .btn-outline-primary {
