@@ -1,8 +1,8 @@
 {
-  "title": "Oyinkansola Onwuchekwa AI Researcher Portfolio",
+  "title": "Oyinkansola Onwuchekwa AI Research Engineer Portfolio",
   "name": "oyinkanchekwas-github-io",
   "version": "1.0.0",
-  "description": "Personal AI research, multilingual NLP, agentic AI, and data science portfolio for Oyinkansola Onwuchekwa.",
+  "description": "Personal AI research engineering, multilingual NLP, agentic AI, and data science portfolio for Oyinkansola Onwuchekwa.",
   "keywords": [
     "portfolio",
     "data-analytics",
@@ -15,8 +15,7 @@
   ],
   "homepage": "https://oyinkanchekwas.github.io",
   "bugs": {
-    "url": "https://github.com/oyinkanchekwas/oyinkanchekwas.github.io/issues",
-    "email": "keenahkaychekwas@gmail.com"
+    "url": "https://github.com/oyinkanchekwas/oyinkanchekwas.github.io/issues"
   },
   "license": "MIT",
   "author": "Oyinkansola Onwuchekwa",

@@ -4,11 +4,11 @@ Personal GitHub Pages portfolio for AI research, agentic AI engineering, multili
 
 ## Highlights
 
-- Presents an up-to-date AI researcher profile.
+- Presents an up-to-date AI Research Engineer and Data Scientist profile based on the 2026 CV.
 - Links to selected GitHub projects and research work.
-- Uses optimised portrait assets in the first viewport and sidebar.
+- Uses optimised 2026 portrait assets in the first viewport and sidebar.
 - Uses local Bootstrap/vendor assets so the page can run as a simple static site.
-- Keeps the original Start Bootstrap Resume theme license.
+- Keeps the original Start Bootstrap Resume theme licence.
 
 ## Local Preview
 

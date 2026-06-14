@@ -10,6 +10,7 @@
 
 body {
   color: var(--muted);
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
 }
 
 .bg-primary {
@@ -57,13 +58,30 @@ h4,
 h5,
 h6 {
   color: var(--ink);
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
   letter-spacing: 0;
 }
 
 h1 {
-  font-size: 5.2rem;
-  line-height: 5rem;
-  max-width: 13ch;
+  font-size: 4.6rem;
+  line-height: 4.45rem;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.subheading,
+.navbar,
+.btn,
+.skill-pill,
+.clean-list,
+.metric-item {
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
+}
+
+.subheading {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0;
 }
 
 #about.resume-section {
@@ -148,7 +166,7 @@ h1 {
 
 .metric-item strong {
   color: var(--ink);
-  font-family: "Saira Extra Condensed", serif;
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
   font-size: 1.25rem;
   line-height: 1;
   text-transform: uppercase;
