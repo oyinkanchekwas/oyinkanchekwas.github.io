@@ -1,0 +1,264 @@
+:root {
+  --accent: #8a3d62;
+  --accent-dark: #55243f;
+  --teal: #0f766e;
+  --ink: #263238;
+  --muted: #5f6870;
+  --line: #dde3e8;
+  --soft: #f7faf9;
+}
+
+body {
+  color: var(--muted);
+}
+
+.bg-primary {
+  background-color: var(--accent-dark) !important;
+}
+
+.text-primary,
+a {
+  color: var(--accent) !important;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: var(--teal) !important;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--accent-dark);
+  border-color: var(--accent-dark);
+}
+
+.btn-outline-primary {
+  border-color: var(--accent);
+  color: var(--accent) !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #fff !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--ink);
+  letter-spacing: 0;
+}
+
+h1 {
+  font-size: 5.2rem;
+  line-height: 5rem;
+  max-width: 13ch;
+}
+
+#about.resume-section {
+  min-height: auto;
+  padding-bottom: 1.25rem !important;
+  padding-top: 2.5rem !important;
+}
+
+.eyebrow {
+  color: var(--teal);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.hero-grid {
+  align-items: center;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: minmax(0, 1.55fr) minmax(18rem, 0.85fr);
+  width: 100%;
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
+.hero-media {
+  justify-self: end;
+  max-width: 26rem;
+  width: 100%;
+}
+
+.hero-media img {
+  aspect-ratio: 4 / 5;
+  border-radius: 0.35rem;
+  box-shadow: 0 1.25rem 2.5rem rgba(38, 50, 56, 0.18);
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.hero-actions .btn {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.45rem;
+  min-height: 2.7rem;
+}
+
+.lead {
+  color: #46525c;
+  font-size: 1.1rem;
+  max-width: 62rem;
+}
+
+.metric-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 52rem;
+}
+
+.metric-item {
+  border-left: 3px solid var(--teal);
+  background: var(--soft);
+  padding: 0.65rem 0.8rem;
+}
+
+.metric-item strong,
+.metric-item span {
+  display: block;
+}
+
+.metric-item strong {
+  color: var(--ink);
+  font-family: "Saira Extra Condensed", serif;
+  font-size: 1.25rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.metric-item span {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.feature-block,
+.timeline-item,
+.education-block {
+  border-left: 3px solid rgba(15, 118, 110, 0.35);
+  padding-left: 1.15rem;
+}
+
+.feature-block {
+  height: 100%;
+}
+
+.project-card {
+  border: 1px solid var(--line);
+}
+
+.project-card:hover {
+  box-shadow: 0 0.5rem 1.5rem rgba(38, 50, 56, 0.12);
+}
+
+.project-icon {
+  color: var(--teal) !important;
+}
+
+.project-note {
+  color: var(--teal);
+}
+
+.clean-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.clean-list li {
+  border-bottom: 1px solid var(--line);
+  padding: 0.7rem 0;
+}
+
+.clean-list li:first-child {
+  padding-top: 0;
+}
+
+.skill-pill {
+  border-color: rgba(138, 61, 98, 0.28);
+}
+
+@media (min-width: 992px) {
+  #sideNav .navbar-brand .img-profile {
+    max-height: 11rem;
+    max-width: 11rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-media {
+    justify-self: start;
+    max-width: 18rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 3.2rem;
+    line-height: 3.25rem;
+  }
+
+  h2 {
+    font-size: 2.75rem;
+  }
+
+  .subheading {
+    overflow-wrap: anywhere;
+  }
+
+  .hero-grid {
+    gap: 1.25rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    margin-bottom: 0 !important;
+  }
+
+  .metric-grid {
+    display: none;
+  }
+
+  .hero-media {
+    justify-self: center;
+    max-width: 11.5rem;
+  }
+
+  section.resume-section {
+    padding-top: 4.5rem !important;
+  }
+}

@@ -1,14 +1,16 @@
 {
-  "title": "Oyinkansola Onwuchekwa Portfolio",
+  "title": "Oyinkansola Onwuchekwa AI Researcher Portfolio",
   "name": "oyinkanchekwas-github-io",
   "version": "1.0.0",
-  "description": "Personal data analytics and AI portfolio for Oyinkansola Onwuchekwa.",
+  "description": "Personal AI research, multilingual NLP, agentic AI, and data science portfolio for Oyinkansola Onwuchekwa.",
   "keywords": [
     "portfolio",
     "data-analytics",
     "data-science",
     "machine-learning",
     "nlp",
+    "agentic-ai",
+    "low-resource-nlp",
     "github-pages"
   ],
   "homepage": "https://oyinkanchekwas.github.io",

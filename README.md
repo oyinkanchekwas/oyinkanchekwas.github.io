@@ -1,11 +1,12 @@
 # Oyinkansola Onwuchekwa Portfolio
 
-Personal GitHub Pages portfolio for data analytics, AI/data science, NLP, and social impact work.
+Personal GitHub Pages portfolio for AI research, agentic AI engineering, multilingual NLP, data science, and responsible AI work.
 
 ## Highlights
 
-- Replaces the default Start Bootstrap demo copy with a focused data analyst portfolio.
+- Presents an up-to-date AI researcher profile based on the 2026 CV.
 - Links to selected GitHub projects and research work.
+- Uses optimized 2026 portrait assets in the first viewport and sidebar.
 - Uses local Bootstrap/vendor assets so the page can run as a simple static site.
 - Keeps the original Start Bootstrap Resume theme license.
 
