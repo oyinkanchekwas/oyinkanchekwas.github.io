@@ -113,3 +113,48 @@ a {
   color: #713ab0; }
   a:hover, a:focus, a:active {
     color: #824027; }
+
+.lead {
+  color: #5f6870;
+  max-width: 60rem; }
+
+.skill-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem; }
+
+.skill-pill {
+  border: 1px solid rgba(113, 58, 176, 0.24);
+  border-radius: 999px;
+  color: #343a40;
+  display: inline-flex;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding: 0.4rem 0.75rem; }
+
+.project-card {
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  height: 100%;
+  transition: box-shadow 0.2s ease, transform 0.2s ease; }
+  .project-card:hover {
+    box-shadow: 0 0.5rem 1.5rem rgba(52, 58, 64, 0.12);
+    transform: translateY(-2px); }
+
+.project-icon {
+  font-size: 1.75rem;
+  margin-bottom: 1rem; }
+
+.project-note {
+  color: #5f6870;
+  font-weight: 700; }
+
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 4rem; }
+  .subheading {
+    overflow-wrap: anywhere; }
+  section.resume-section {
+    padding-top: 4rem !important; } }
