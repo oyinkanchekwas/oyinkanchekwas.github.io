@@ -213,6 +213,20 @@ h1 {
 
 .project-note {
   color: var(--teal);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.45rem;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.project-links a {
+  font-weight: 700;
 }
 
 .clean-list {
