@@ -199,6 +199,43 @@ h1 {
   height: 100%;
 }
 
+.focus-callout {
+  background: var(--soft);
+  border-left: 3px solid var(--accent);
+  padding: 1rem 1.15rem;
+}
+
+.focus-callout p {
+  margin-bottom: 0;
+}
+
+.proof-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.proof-strip span {
+  background: var(--soft);
+  border: 1px solid rgba(15, 118, 110, 0.22);
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.45rem 0.65rem;
+}
+
+.project-group + .project-group {
+  margin-top: 1.75rem;
+}
+
+.project-group-heading {
+  max-width: 48rem;
+}
+
+.project-group-heading p:last-child {
+  margin-bottom: 1.5rem;
+}
+
 .project-card {
   border: 1px solid var(--line);
 }
