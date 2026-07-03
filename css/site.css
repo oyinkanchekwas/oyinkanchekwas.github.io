@@ -22,6 +22,20 @@ a {
   color: var(--accent) !important;
 }
 
+#sideNav .navbar-brand,
+#sideNav .navbar-nav .nav-link {
+  color: #fff !important;
+  opacity: 1;
+}
+
+#sideNav .navbar-brand:hover,
+#sideNav .navbar-brand:focus,
+#sideNav .navbar-nav .nav-link:hover,
+#sideNav .navbar-nav .nav-link:focus,
+#sideNav .navbar-nav .nav-link.active {
+  color: #fff !important;
+}
+
 a:hover,
 a:focus,
 a:active {
