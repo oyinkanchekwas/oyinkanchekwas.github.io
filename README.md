@@ -11,12 +11,6 @@ Personal GitHub Pages portfolio for AI engineering, research science, coding-age
 - Uses local Bootstrap/vendor assets so the page can run as a simple static site.
 - Keeps the original Start Bootstrap Resume theme licence.
 
-## Local Preview
+## Maintenance
 
-Open `index.html` directly in a browser, or serve the directory locally:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then visit `http://localhost:8000`.
+The portfolio is a static GitHub Pages site built from `index.html` and local assets. Public copy should remain polished, concise, and aligned with British English conventions.
