@@ -94,7 +94,7 @@
           <div class="metric-grid">
             <div class="metric-item">
               <strong>Package</strong>
-              <span>Released Low-Resource NLP Toolkit on PyPI</span>
+              <span>PyPI package with a held-out AfriSenti benchmark</span>
             </div>
             <div class="metric-item">
               <strong>Traces</strong>
@@ -235,9 +235,9 @@
 
         <div class="proof-strip mb-5">
           <span>Released Python package</span>
+          <span>Held-out AfriSenti benchmark</span>
           <span>Coding-agent trace dataset</span>
           <span>Monitor evaluation harness</span>
-          <span>CI-tested project repositories</span>
         </div>
 
         <div class="project-group">
@@ -297,14 +297,17 @@
                 <div class="card-body">
                   <i class="fa fa-language project-icon text-primary" aria-hidden="true"></i>
                   <h3 class="h4 card-title">Low-Resource NLP Toolkit</h3>
-                  <p class="project-note">Released Python package</p>
-                  <p class="card-text">Utilities for African language pre-processing, emotion-label mapping,
-                    evaluation, language routing, and code-switching audits.</p>
+                  <p class="project-note">Python package and routing benchmark</p>
+                  <p class="card-text">African language pre-processing, selective routing, code-switch audits, and
+                    coverage-aware evaluation. On 18,402 held-out AfriSenti test examples, the development-selected
+                    policy reached 89.65% accuracy at 74.03% coverage.</p>
                   <div class="project-links">
                     <a href="https://github.com/oyinkanchekwas/low-resource-nlp-toolkit"
                       rel="noopener noreferrer">Repository</a>
                     <a href="https://pypi.org/project/low-resource-nlp-toolkit/"
                       rel="noopener noreferrer">PyPI package</a>
+                    <a href="https://oyinkanchekwas.github.io/low-resource-nlp-toolkit/benchmark/"
+                      rel="noopener noreferrer">Benchmark</a>
                   </div>
                 </div>
               </div>
@@ -314,12 +317,13 @@
               <div class="card project-card">
                 <div class="card-body">
                   <i class="fa fa-comments project-icon text-primary" aria-hidden="true"></i>
-                  <h3 class="h4 card-title">Dimensional ABSA Research</h3>
-                  <p class="project-note">Multilingual sentiment research</p>
-                  <p class="card-text">Research code for predicting how people feel about specific aspects in text,
-                    using valence-arousal scores for finer-grained sentiment beyond positive or negative labels.</p>
+                  <h3 class="h4 card-title">Multilingual DimStance Baselines</h3>
+                  <p class="project-note">Reproducible low-resource evaluation</p>
+                  <p class="card-text">Aspect-conditioned valence-arousal baselines for five languages, evaluated at
+                    fixed training budgets with grouped resampling and uncertainty intervals. Aspect conditioning
+                    reduced test macro RMSE from 1.343 to 1.323.</p>
                   <div class="project-links">
-                    <a href="https://github.com/oyinkanchekwas/DimABSA_2026_DAIM_RESEARCH"
+                    <a href="https://github.com/oyinkanchekwas/multilingual-dimstance-baselines"
                       rel="noopener noreferrer">Repository</a>
                   </div>
                 </div>
