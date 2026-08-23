@@ -13,6 +13,5 @@ Career history and broader professional activity remain on LinkedIn and the main
 
 ## Maintenance
 
-The site is served from `index.html` with local CSS, plain JavaScript, image, and vendor assets. It has no runtime package dependency. Public claims should link to their source record and distinguish released work from projects under review.
-
+The site is served from `index.html` with local CSS, plain JavaScript, image, and vendor assets. It has no runtime package dependency.
 The original Start Bootstrap Resume theme licence is retained.
