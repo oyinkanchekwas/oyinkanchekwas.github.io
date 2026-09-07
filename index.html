@@ -5,23 +5,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description"
-    content="Public AI research engineering portfolio for Oyinkansola Onwuchekwa, covering low-resource NLP, coding-agent evaluation, open-source contributions, and research outputs.">
+    content="AI research and engineering portfolio for Oyinkansola Onwuchekwa, covering agentic systems, coding-agent evaluation, responsible AI, and multilingual NLP.">
   <meta name="author" content="Oyinkansola Onwuchekwa">
-  <meta property="og:title" content="Oyinkansola Onwuchekwa | AI Research Engineer">
+  <meta property="og:title" content="Oyinkansola Onwuchekwa | AI Researcher and Engineer">
   <meta property="og:description"
-    content="Released software, reproducible NLP benchmarks, coding-agent evaluation datasets, and accepted open-source contributions.">
+    content="Agent security software, coding-agent evaluation benchmarks, multilingual NLP research, and accepted open-source contributions.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://oyinkanchekwas.github.io">
   <meta property="og:image" content="https://oyinkanchekwas.github.io/img/portrait-2026.jpg">
 
-  <title>Oyinkansola Onwuchekwa | AI Research Engineer</title>
+  <title>Oyinkansola Onwuchekwa | AI Researcher and Engineer</title>
 
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
   <link href="css/resume.min.css" rel="stylesheet">
-  <link href="css/site.css?v=20260823-work1" rel="stylesheet">
+  <link href="css/site.css?v=20260907-agent1" rel="stylesheet">
   <link rel="icon" href="img/profile-2026.jpg" type="image/jpeg">
 
   <script type="application/ld+json">
@@ -31,7 +31,7 @@
     "name": "Oyinkansola Onwuchekwa",
     "url": "https://oyinkanchekwas.github.io",
     "image": "https://oyinkanchekwas.github.io/img/portrait-2026.jpg",
-    "jobTitle": "AI Research Engineer",
+    "jobTitle": "AI Researcher and Engineer",
     "affiliation": {
       "@type": "CollegeOrUniversity",
       "name": "University of Hull"
@@ -43,10 +43,12 @@
       "https://oyinkanchekwas.com"
     ],
     "knowsAbout": [
+      "Agentic systems",
+      "Coding-agent security",
+      "AI safety and assurance",
+      "Responsible artificial intelligence",
       "Low-resource natural language processing",
-      "Coding-agent evaluation",
-      "Multilingual machine learning",
-      "Retrieval-augmented classification"
+      "Multilingual machine learning"
     ]
   }
   </script>
@@ -92,14 +94,14 @@
     <section class="resume-section portfolio-hero p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Low-resource NLP | Coding-agent evaluation</p>
+          <p class="eyebrow">Agentic systems | Coding-agent evaluation | Responsible AI | Multilingual NLP</p>
           <h1 class="mb-3">Oyinkansola
             <span class="text-primary">Onwuchekwa</span>
           </h1>
-          <div class="subheading mb-4">AI Research Engineer and Research Scientist | Hull, England</div>
-          <p class="lead mb-4">I build Python software for multilingual NLP and coding-agent evaluation. The work
-            below includes a released package, reproducible benchmarks, labelled trace datasets, and accepted upstream
-            fixes.</p>
+          <div class="subheading mb-4">AI Researcher and Engineer | Hull, England</div>
+          <p class="lead mb-4">I build and evaluate agentic systems, with a focus on coding-agent controls and
+            trace-level evaluation. My wider research covers responsible AI, multilingual NLP, low-resource African
+            languages, and culturally grounded emotion modelling.</p>
 
           <div class="hero-actions mb-5">
             <a class="btn btn-primary js-scroll-trigger" href="#work">
@@ -114,16 +116,16 @@
 
           <div class="metric-grid" aria-label="Portfolio evidence">
             <div class="metric-item">
-              <strong>0.3.0</strong>
-              <span>Low-Resource NLP Toolkit release</span>
+              <strong>0.5.0</strong>
+              <span>Secure Agent Gateway release</span>
+            </div>
+            <div class="metric-item">
+              <strong>320 + 160</strong>
+              <span>Core and adversarial control-bench traces</span>
             </div>
             <div class="metric-item">
               <strong>18,402</strong>
               <span>Held-out AfriSenti test items</span>
-            </div>
-            <div class="metric-item">
-              <strong>120</strong>
-              <span>Labelled coding-agent traces</span>
             </div>
             <div class="metric-item">
               <strong>2</strong>
@@ -141,11 +143,50 @@
       <div class="my-auto section-content">
         <p class="section-label">Selected work</p>
         <h2 class="mb-3">Public projects</h2>
-        <p class="section-intro mb-5">Each project can be run or inspected from the links below.
-          The figures shown here come from held-out evaluations or versioned release records.</p>
+        <p class="section-intro mb-5">Source code, release records, benchmark reports, and research notes are linked
+          with each project. Reported figures come from held-out evaluations or versioned release records.</p>
 
         <div class="work-grid">
           <article class="project-card project-card-featured">
+            <div class="project-card-heading">
+              <p class="project-note">Agent security | Version 0.5.0</p>
+              <h3>Secure Agent Gateway</h3>
+            </div>
+            <p>An authenticated gateway that evaluates agent tool requests before adapter execution. It checks
+              identity, role, parameters, destination, approval, and session state, then writes redacted hash-linked
+              audit records.</p>
+            <p class="project-result">Version 0.5.0 adds requirement-driven causal and temporal probes, bounded
+              policy checking, policy-change analysis, and mutation-tested trajectory contracts.</p>
+            <div class="project-links">
+              <a href="https://github.com/oyinkanchekwas/secure-agent-gateway"
+                rel="noopener noreferrer">Repository</a>
+              <a href="https://github.com/oyinkanchekwas/secure-agent-gateway/releases/tag/v0.5.0"
+                rel="noopener noreferrer">Release 0.5.0</a>
+              <a href="https://github.com/oyinkanchekwas/secure-agent-gateway/blob/main/docs/PROBE_SYNTHESIS.md"
+                rel="noopener noreferrer">Probe synthesis</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-heading">
+              <p class="project-note">Monitor benchmark | Version 0.4.1</p>
+              <h3>Agentic Security Control Bench</h3>
+            </div>
+            <p>A contrastive benchmark for testing whether coding-agent monitors ground control decisions in
+              policy-relevant trace evidence. The release contains 320 core traces and a separate 160-trace
+              adversarial holdout.</p>
+            <p class="project-result">Evaluation reports prevention, permitted-task retention, evidence grounding,
+              intervention timing, calibration, approval burden, and paired bootstrap intervals.</p>
+            <div class="project-links">
+              <a href="https://github.com/oyinkanchekwas/agentic-security-control-bench"
+                rel="noopener noreferrer">Repository</a>
+              <a href="https://github.com/oyinkanchekwas/agentic-security-control-bench/releases/tag/v0.4.1"
+                rel="noopener noreferrer">Release 0.4.1</a>
+              <a href="https://doi.org/10.5281/zenodo.22162753" rel="noopener noreferrer">DOI record</a>
+            </div>
+          </article>
+
+          <article class="project-card">
             <div class="project-card-heading">
               <p class="project-note">Python package | Version 0.3.0</p>
               <h3>Low-Resource NLP Toolkit</h3>
@@ -289,6 +330,15 @@
             <h3>Releases and technical reports</h3>
           </div>
           <div class="release-links">
+            <a href="https://github.com/oyinkanchekwas/secure-agent-gateway/releases/tag/v0.5.0"
+              rel="noopener noreferrer">
+              <span>Secure Agent Gateway</span>
+              <strong>Release 0.5.0</strong>
+            </a>
+            <a href="https://doi.org/10.5281/zenodo.22162753" rel="noopener noreferrer">
+              <span>Agentic Security Control Bench</span>
+              <strong>DOI 10.5281/zenodo.22162753</strong>
+            </a>
             <a href="https://pypi.org/project/low-resource-nlp-toolkit/" rel="noopener noreferrer">
               <span>Low-Resource NLP Toolkit</span>
               <strong>PyPI 0.3.0</strong>
@@ -327,8 +377,8 @@
           </div>
           <div class="background-block">
             <h3>Engineering</h3>
-            <p>My recent work includes systematic-review agents, evidence tools for NHS England, responsible AI for
-              cultural heritage, and machine-learning teaching.</p>
+            <p>My recent engineering work covers agent tool policy, coding-agent monitor evaluation, research
+              automation, and reproducible NLP systems.</p>
           </div>
         </div>
 
@@ -338,7 +388,9 @@
           <span class="skill-pill">Hugging Face</span>
           <span class="skill-pill">scikit-learn</span>
           <span class="skill-pill">RAG</span>
-          <span class="skill-pill">Agent Evaluation</span>
+          <span class="skill-pill">Coding-agent evaluation</span>
+          <span class="skill-pill">Policy testing</span>
+          <span class="skill-pill">Responsible AI</span>
           <span class="skill-pill">GitHub Actions</span>
           <span class="skill-pill">Docker</span>
         </div>
@@ -346,9 +398,9 @@
         <div class="contact-band mt-5">
           <div>
             <p class="section-label">Contact</p>
-            <h3>AI engineering and research roles</h3>
-            <p>I am interested in AI engineering, research science, research software engineering, and applied science
-              roles in the UK and internationally.</p>
+            <h3>Research and engineering enquiries</h3>
+            <p>For research collaboration, technical discussion, speaking, or professional enquiries, use the links
+              here.</p>
           </div>
           <div class="contact-links">
             <a href="https://www.linkedin.com/in/oyinkan-chekwas/" rel="noopener noreferrer">

@@ -1,15 +1,14 @@
-# Oyinkansola Onwuchekwa Portfolio
+# Oyinkansola Onwuchekwa: AI Researcher and Engineer
 
-GitHub Pages portfolio for Oyinkansola Onwuchekwa's public AI research engineering work.
+GitHub Pages portfolio for Oyinkansola Onwuchekwa's public research and engineering work.
 
-The homepage is organised around work that a reader can inspect directly:
+Featured work includes:
 
-- released low-resource NLP software and benchmark reports;
-- coding-agent evaluation datasets and monitor tooling;
+- the Secure Agent Gateway and its causal-temporal policy probes;
+- the Agentic Security Control Bench and its DOI-archived evaluation suite;
+- released low-resource NLP software and multilingual benchmark reports;
 - pull requests accepted into Haystack and Sentence Transformers;
-- peer-reviewed and citable public research outputs.
-
-Career history and broader professional activity remain on LinkedIn and the main KKC website. This repository is kept as a focused technical portfolio.
+- peer-reviewed papers and citable public research outputs.
 
 ## Maintenance
 
