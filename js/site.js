@@ -74,7 +74,9 @@ if ("IntersectionObserver" in window) {
 }
 
 const outputFilters = [...document.querySelectorAll(".output-filter")];
-const outputEntries = [...document.querySelectorAll("[data-output-type]")];
+const outputEntries = [...document.querySelectorAll(".output-entry")];
+const releasePanel = document.querySelector(".release-panel");
+const releaseLinks = [...document.querySelectorAll(".release-links a[data-output-type]")];
 
 outputFilters.forEach(function (filter) {
   filter.addEventListener("click", function () {
@@ -89,6 +91,15 @@ outputFilters.forEach(function (filter) {
     outputEntries.forEach(function (entry) {
       const visible = selected === "all" || entry.dataset.outputType.split(" ").includes(selected);
       entry.classList.toggle("is-hidden", !visible);
+    });
+
+    if (releasePanel) {
+      releasePanel.classList.toggle("is-hidden", selected === "paper");
+    }
+
+    releaseLinks.forEach(function (link) {
+      const visible = selected === "all" || link.dataset.outputType === selected;
+      link.classList.toggle("is-hidden", !visible);
     });
   });
 });

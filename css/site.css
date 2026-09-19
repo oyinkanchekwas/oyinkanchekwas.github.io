@@ -518,7 +518,8 @@ section.resume-section {
 .output-filter:hover,
 .output-filter.is-active { color: #fff; background: var(--teal); border-color: var(--teal); }
 .output-entry.is-hidden,
-.release-panel.is-hidden { display: none; }
+.release-panel.is-hidden,
+.release-links a.is-hidden { display: none; }
 
 .output-entry {
   display: grid;
@@ -866,6 +867,8 @@ section.resume-section {
   }
 
   .project-card,
+  .project-card:hover,
+  .project-card:focus-within,
   .reveal-item {
     transition: none;
     opacity: 1;
