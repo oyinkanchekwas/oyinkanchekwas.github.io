@@ -72,3 +72,42 @@ if ("IntersectionObserver" in window) {
     observer.observe(section);
   });
 }
+
+const outputFilters = [...document.querySelectorAll(".output-filter")];
+const outputEntries = [...document.querySelectorAll("[data-output-type]")];
+
+outputFilters.forEach(function (filter) {
+  filter.addEventListener("click", function () {
+    const selected = filter.dataset.filter;
+
+    outputFilters.forEach(function (button) {
+      const active = button === filter;
+      button.classList.toggle("is-active", active);
+      button.setAttribute("aria-pressed", String(active));
+    });
+
+    outputEntries.forEach(function (entry) {
+      const visible = selected === "all" || entry.dataset.outputType.split(" ").includes(selected);
+      entry.classList.toggle("is-hidden", !visible);
+    });
+  });
+});
+
+if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  const revealObserver = new IntersectionObserver(function (entries, observer) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) {
+        return;
+      }
+
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll(".programme-panel, .project-card, .contribution-item, .output-entry, .release-panel, .background-block, .contact-band")
+    .forEach(function (element) {
+      element.classList.add("reveal-item");
+      revealObserver.observe(element);
+    });
+}
