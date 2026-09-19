@@ -21,7 +21,7 @@
   <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
   <link href="css/resume.min.css" rel="stylesheet">
-  <link href="css/site.css?v=20260908-service1" rel="stylesheet">
+  <link href="css/site.css?v=20260919-portfolio2" rel="stylesheet">
   <link rel="icon" href="img/profile-2026.jpg" type="image/jpeg">
 
   <script type="application/ld+json">
@@ -101,7 +101,7 @@
           <h1 class="mb-3">Oyinkansola
             <span class="text-primary">Onwuchekwa</span>
           </h1>
-          <div class="subheading mb-4">AI Researcher and Engineer | Hull, England</div>
+          <div class="subheading mb-4">AI Researcher and Engineer | England, United Kingdom</div>
           <p class="lead mb-4">I build and evaluate agentic systems, with a focus on coding-agent controls and
             trace-level evaluation. My wider research covers responsible AI, multilingual NLP, low-resource African
             languages, and culturally grounded emotion modelling.</p>
@@ -115,6 +115,13 @@
               <i class="fa fa-github" aria-hidden="true"></i>
               GitHub profile
             </a>
+          </div>
+
+          <div class="hero-status" aria-label="Current research programme">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Current programme</span>
+            <strong>Agent traces to controlled tool use</strong>
+            <a href="#programme" class="js-scroll-trigger">See the route <span aria-hidden="true">&#8599;</span></a>
           </div>
 
           <div class="metric-grid" role="group" aria-label="Portfolio evidence">
@@ -149,6 +156,20 @@
         <p class="section-intro mb-5">Source code, release records, benchmark reports, and research notes are linked
           with each project. Reported figures come from held-out evaluations or versioned release records.</p>
 
+        <div class="programme-panel" id="programme">
+          <div class="programme-intro">
+            <p class="project-note">Research programme</p>
+            <h3>From trace evidence to controlled action</h3>
+            <p>I study what an agent did, how a monitor can identify the point of failure, and which controls should sit before tool execution.</p>
+          </div>
+          <ol class="programme-steps">
+            <li><span>01</span><strong>Trace</strong><small>Record the agent’s actions</small></li>
+            <li><span>02</span><strong>Monitor</strong><small>Locate policy-relevant evidence</small></li>
+            <li><span>03</span><strong>Control</strong><small>Check the request before execution</small></li>
+            <li><span>04</span><strong>Evaluate</strong><small>Measure safety and task utility</small></li>
+          </ol>
+        </div>
+
         <div class="work-grid">
           <article class="project-card project-card-featured">
             <div class="project-card-heading">
@@ -160,6 +181,7 @@
               audit records.</p>
             <p class="project-result">Version 0.5.0 adds requirement-driven causal and temporal probes, bounded
               policy checking, policy-change analysis, and mutation-tested trajectory contracts.</p>
+            <div class="project-facts"><span>Python package</span><span>Policy enforcement</span><span>Audit records</span></div>
             <div class="project-links">
               <a href="https://github.com/oyinkanchekwas/secure-agent-gateway"
                 rel="noopener noreferrer">Repository</a>
@@ -180,6 +202,7 @@
               adversarial holdout.</p>
             <p class="project-result">Evaluation measures unsafe-action prevention, permitted-task retention, evidence
               grounding, intervention timing, calibration, approval burden, and paired bootstrap intervals.</p>
+            <div class="project-facts"><span>320 core traces</span><span>160 adversarial traces</span><span>DOI archived</span></div>
             <div class="project-links">
               <a href="https://github.com/oyinkanchekwas/agentic-security-control-bench"
                 rel="noopener noreferrer">Repository</a>
@@ -198,6 +221,7 @@
               mapping, and coverage-aware evaluation. The package runs without an API key or model download.</p>
             <p class="project-result">On 18,402 held-out AfriSenti test tweets, the development-selected rejection
               policy reached 89.65% accuracy on accepted items at 74.03% coverage.</p>
+            <div class="project-facts"><span>PyPI package</span><span>Offline evaluation</span><span>Documentation site</span></div>
             <div class="project-links">
               <a href="https://pypi.org/project/low-resource-nlp-toolkit/" rel="noopener noreferrer">PyPI</a>
               <a href="https://oyinkanchekwas.github.io/low-resource-nlp-toolkit/"
@@ -303,8 +327,15 @@
         <h2 class="mb-3">Public research outputs</h2>
         <p class="section-intro mb-5">Published records and versioned technical outputs with permanent public links.</p>
 
+        <div class="output-filters" role="group" aria-label="Filter research outputs">
+          <button class="output-filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="output-filter" type="button" data-filter="paper" aria-pressed="false">Papers</button>
+          <button class="output-filter" type="button" data-filter="software" aria-pressed="false">Software</button>
+          <button class="output-filter" type="button" data-filter="benchmark" aria-pressed="false">Benchmarks</button>
+        </div>
+
         <div class="output-group">
-          <article class="output-entry">
+          <article class="output-entry" data-output-type="paper">
             <div class="output-year">2024</div>
             <div>
               <p class="output-type">Peer-reviewed paper</p>
@@ -315,7 +346,7 @@
             </div>
           </article>
 
-          <article class="output-entry">
+          <article class="output-entry" data-output-type="paper">
             <div class="output-year">2025</div>
             <div>
               <p class="output-type">Conference abstract and presentation</p>
@@ -327,36 +358,36 @@
           </article>
         </div>
 
-        <div class="release-panel mt-5">
+        <div class="release-panel mt-5" data-output-type="software">
           <div>
             <p class="section-label">Software records</p>
             <h3>Releases and technical reports</h3>
           </div>
           <div class="release-links">
-            <a href="https://github.com/oyinkanchekwas/secure-agent-gateway/releases/tag/v0.5.0"
+            <a data-output-type="software" href="https://github.com/oyinkanchekwas/secure-agent-gateway/releases/tag/v0.5.0"
               rel="noopener noreferrer">
               <span>Secure Agent Gateway</span>
               <strong>Release 0.5.0</strong>
             </a>
-            <a href="https://doi.org/10.5281/zenodo.22162753" rel="noopener noreferrer">
+            <a data-output-type="benchmark" href="https://doi.org/10.5281/zenodo.22162753" rel="noopener noreferrer">
               <span>Agentic Security Control Bench</span>
               <strong>DOI 10.5281/zenodo.22162753</strong>
             </a>
-            <a href="https://pypi.org/project/low-resource-nlp-toolkit/" rel="noopener noreferrer">
+            <a data-output-type="software" href="https://pypi.org/project/low-resource-nlp-toolkit/" rel="noopener noreferrer">
               <span>Low-Resource NLP Toolkit</span>
               <strong>PyPI 0.3.0</strong>
             </a>
-            <a href="https://oyinkanchekwas.github.io/low-resource-nlp-toolkit/benchmark/"
+            <a data-output-type="benchmark" href="https://oyinkanchekwas.github.io/low-resource-nlp-toolkit/benchmark/"
               rel="noopener noreferrer">
               <span>AfriSenti routing study</span>
               <strong>Benchmark report</strong>
             </a>
-            <a href="https://github.com/oyinkanchekwas/coding-agent-failure-atlas/releases/tag/v0.1.0"
+            <a data-output-type="software" href="https://github.com/oyinkanchekwas/coding-agent-failure-atlas/releases/tag/v0.1.0"
               rel="noopener noreferrer">
               <span>Coding Agent Failure Atlas</span>
               <strong>Release 0.1.0</strong>
             </a>
-            <a href="https://github.com/oyinkanchekwas/multilingual-dimstance-baselines/blob/main/results/benchmark.md"
+            <a data-output-type="benchmark" href="https://github.com/oyinkanchekwas/multilingual-dimstance-baselines/blob/main/results/benchmark.md"
               rel="noopener noreferrer">
               <span>Multilingual DimStance Baselines</span>
               <strong>Benchmark results</strong>
